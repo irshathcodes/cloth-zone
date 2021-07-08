@@ -1,0 +1,31 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+}
+.loading {
+  margin-top: 10rem;
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: #ff6e6c;
+  animation: spinner 0.6s infinite linear;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Checkout Styles */
+
+.checkout-title {
+  margin-top: 0;
+}
+
+/* confirmation  */
+.confirmation-loading {
+  margin-top: 0;
+  width: 4rem;
+  height: 4rem;
+}

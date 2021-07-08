@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-100: #d2d0d7;
+  --primary-200: #a5a0ae;
+  --primary-400: #4c415d;
+  --primary-500: #1f1235;
+  --primary-600: #190e2a;
+  --buttonText: #1f1235;
+  --buttonBackground: #ff6e6c;
+
+  /* box shadow */
+  --shadow1: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow2: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow3: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow4: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--primary-500);
+}
+/* Global styles */
+p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary-500);
+  margin: 3rem 0 1.38rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+/* NAV STYLES STARTS FROM HERE */
+
+.nav-container {
+  width: 100%;
+  height: 3.063rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--buttonBackground);
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 0 4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+li {
+  list-style-type: none;
+}
+
+.logo {
+  padding-top: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.brand {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: var(--primary-500);
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+}
+.links {
+  text-decoration: none;
+  color: var(--primary-500);
+}
+.links:hover {
+  color: #fff;
+}
+.hamburger {
+  display: none;
+}
+.cart {
+  margin-right: 0.7rem;
+}
+
+/* ######END OF NAV STYLES ######*/
+
+/* HERO  STYLES STARTS FROM HERE  */
+.show-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Assets/hero.jpg);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--primary-600);
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 0;
+}
+.shop-btn {
+  border: transparent;
+  width: 6.2rem;
+  height: 2.4rem;
+  border-radius: 0.22rem;
+  background: var(--buttonBackground);
+  color: var(--buttonText);
+  font-size: 0.7;
+  text-transform: uppercase;
+  box-shadow: var(--shadow1);
+  cursor: pointer;
+  font-weight: 600;
+}
+.shop-btn:hover {
+  box-shadow: var(--shadow3);
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  color: var(--buttonBackground);
+}
+.hero-desc {
+  color: var(--primary-100);
+}
+.hero-p {
+  font-size: 1.2rem;
+  color: var(--primary-100);
+}
+
+/* Hero Styles Ends */
+
+/* Our Products Overview Styles Starts Here  */
+main {
+  margin-top: 4rem;
+}
+h1 {
+  text-align: center;
+  color: var(--primary-500);
+}
+h2 {
+  color: var(--primary-500);
+}
+.home-title {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+.underline {
+  height: 0.3rem;
+  width: 7rem;
+  background: var(--buttonBackground);
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.home-loading {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: #ff6e6c;
+  animation: spinner 0.6s infinite linear;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Our Products styles ends  */
+
+/* About Us */
+.section {
+  height: 100vh;
+}
+section {
+  background-color: var(--primary-100);
+}
+.underline-about {
+  height: 0.3rem;
+  width: 5rem;
+  background: var(--buttonBackground);
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.about-title {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 2rem;
+}
+.about-heading {
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+.about-p {
+  margin: 0 auto;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+.about-info {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.input {
+  border: 2px solid var(--buttonBackground);
+  border-radius: 2px;
+  background: var(--primary-100);
+  height: 36px;
+  width: 50%;
+}
+/* About Us ends here */
+
+/* Mobile View Styles */
+@media screen and (max-width: 600px) {
+  .links:hover {
+    color: var(--primary-500);
+  }
+  .nav-links,
+  .cart {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  /* Hero  */
+  .hero-desc {
+    font-size: 1.5rem;
+  }
+  .hero-p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  /* About Us */
+  .section {
+    height: auto;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .about-p {
+    font-size: 0.9rem;
+    margin: 1rem;
+  }
+  .about-info {
+    font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+}
+/* Mobile Styles ends */
